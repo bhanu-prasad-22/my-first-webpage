@@ -1,63 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF -8">
-        <meta name="viewport" content=""width=device-width,intial-scale=1.0>
-         <title>My Portfolio</title>
-    </head>
-    <body>
-        <img src="C:\Users\Lenovo\OneDrive\Desktop\my-first-webpage\bannerimg.jpg" alt="Profile photo">
-        <header>
-        <h1>VUGGAM BHANUPRASAD</h1>
-        <p>Web Developer | Learner | Dreamer </p>
-        </header>
-        <nav>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <div style="text-align: center;">
+
+        <img src="bannerimg.jpg" alt="Profile photo">
+    </div>
+    <header>
+        <h1 id="home">VUGGAM BHANUPRASAD</h1>
+        <p>Web Developer | Learner | Dreamer</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+
+            <h2>About Me</h2>
+            <div style="height: fit-content;">
+                <img src="sideimg.jpg" alt="image">
+            </div>
+            <p>I am a student of Computer Science Engineering at Maturi Venkata Subba Rao Engineering College.</p>
+
+            <h3>Hobbies</h3>
             <ul>
-                <li> <a href="#">Home</a></li>
-                <li> <a href="#">Projects</a></li>
-                <li> <a href="#">Contact</a></li>
+                <li>Workouting</li>
+                <li>Trading</li>
+                <li>Solving DSA questions on Leetcode</li>
+                <li>Meditating</li>
+                <li>Reading and Writing</li>
             </ul>
-        </nav>
-        <main>
-            <section>
-                <h2> About Me</h2>
-                <p>I am student of Computer Science Engineering at Maturi Venkata Subba Rao Engineering College.</p>
+
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>Basics of Java</li>
                 <ul>
-                    <li>Hobbies</li>
-                    <ul>
-                        <li>Workouting</li>
-                        <li>Trading</li>
-                        <li>Solving Dsa questions on Leetcode</li>
-                        <li>Meditating</li>
-                        <li>Reading and writing</li>
-                    </ul>
+                    <li><a href="https://www.codecademy.com/profiles/bhanu2203" target="_blank">Java Course</a></li>
                 </ul>
-                <ul>
-                    <li>Tecnical Skills</li>
-                    <ul>
-                        <li>Basics of Java</li>
-                        <li>Basics of Html</li>
-                        <li><a href="https://leetcode.com/u/bhanuprasad-22/" target="_blank" >Leetcode Profile</a></li>
-                        <li><a href="https://github.com/bhanu-prasad-22" target="_blank" >Github Profile</a</li>
-                    </ul>
-                </ul>
-                <ul>
-                    <li>Projects</li>
-                    <ul>
-                        <li><a href="file:///C:/Users/Lenovo/OneDrive/Desktop/my-first-webpage/index.html#">Portfolio</a></li>
-                        <p>I have created a basic layout of Portfolio webpage of mine using basic html tags</p>
-                    </ul>
-                </ul>
-                <ul>
-                    <li>Contact</li>
-                    <p>Email:<a href="mailto:bhanuprasadvuggam333@gmail.com">bhanuprasadvuggam333@gmail.com</a></p>
-                     <p>Mobile no:<a href="98xxxxx">98xxxxxx</a></p>
-                </ul>
-            </section>
-        </main>
-    </body>
+                <li>Basics of HTML</li>
+                <li><a href="https://leetcode.com/u/bhanuprasad-22/" target="_blank">Leetcode Profile</a></li>
+                <li><a href="https://github.com/bhanu-prasad-22" target="_blank">GitHub Profile</a></li>
+            </ul>
+
+            <h3 id="projects">Projects</h3>
+            <ul>
+                <li><a href="#">Portfolio</a></li>
+                <p>I have created a basic layout of a portfolio webpage using HTML.</p>
+            </ul>
+
+            <h3 id="contact">Contact</h3>
+            <p>Email: <a href="mailto:bhanuprasadvuggam333@gmail.com">bhanuprasadvuggam333@gmail.com</a></p>
+            <p>Mobile No: 98xxxxxx</p>
+        </section>
+    </main>
+
     <footer>
         <hr />
-        <p>&copy;2025 Bhanu Prasad . All rights reserved.</p>
+        <p>&copy; 2025 Bhanu Prasad. All rights reserved.</p>
     </footer>
+</body>
+
 </html>
