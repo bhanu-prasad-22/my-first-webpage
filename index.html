@@ -77,9 +77,10 @@
         #Hobbies ul {
             list-style: square;
         }
+
         section {
-  margin-bottom: 40px;
-}
+            margin-bottom: 40px;
+        }
     </style>
     <div id="bannerimg">
 
@@ -112,9 +113,19 @@
                     from coding and trading to fitness and spirituality.
                 </p>
             </div>
+            <div>
+                <button onclick="showfact()">Click here to know fun fact about me!</button>
+                <p id="fact"></p>
+                <script>
+                    function showfact() {
+                        document.getElementById("fact").innerText = "I once meditated through three mosquitoes bites without breaking my focus.";
+                    }
+                </script>
+            </div>
             <div id="sideimg">
                 <img src="sideimg.jpg" alt="image">
             </div>
+
         </section>
         <section id="Hobbies">
             <h2>Hobbies</h2>
