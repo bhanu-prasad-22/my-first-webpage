@@ -8,6 +8,7 @@
 </head>
 
 <body>
+
     <style>
         body {
             background-color: #0f172a;
@@ -81,7 +82,29 @@
         section {
             margin-bottom: 40px;
         }
+
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+        }
+
+        body.dark {
+            --bg-color: #0f172a;
+            --text-color: #f1f5f9;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
     </style>
+    <header>
+        <div style="display: flex;justify-content: space-between;align-items: center;">
+            <h1>My Portfolio</h1>
+            <button id="theme-toggle">🌙</button>
+        </div>
+    </header>
     <div id="bannerimg">
 
         <img src="bannerimg.jpg" alt="Profile photo">
@@ -120,6 +143,18 @@
                     function showfact() {
                         document.getElementById("fact").innerText = "I once meditated through three mosquitoes bites without breaking my focus.";
                     }
+                    const toggle =
+                        document.getElementById('theme-toggle');
+                    const body = document.body;
+
+                    if (localStorage.getItem('theme') === 'dark') {
+                        body.classList.add('dark');
+                    }
+                    toggle.addEventListener('click', () => {
+                        body.classList.toggle('dark');
+                        localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : 'light');
+                    });
+
                 </script>
             </div>
             <div id="sideimg">
