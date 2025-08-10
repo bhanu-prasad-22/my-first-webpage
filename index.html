@@ -9,7 +9,96 @@
 
 <body>
 
-    <link rel="style-sheet" href="style.css" />
+    <style>
+        body {
+            background-color: #0f172a;
+            /* dark navy */
+            color: #f1f5f9;
+            /* soft white */
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        h2 {
+            color: #38bdf8;
+            /* sky blue */
+        }
+
+        a :hover {
+            color: #f472b6;
+            /* soft pink */
+        }
+
+        #bannerimg {
+            text-align: center;
+        }
+
+        #sideimg {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        #projects {
+            background-color: #0c4a6e;
+            padding: 20px;
+            color: #f8fafc;
+        }
+
+        .project-box :hover {
+            background-color: #164e63;
+            border: 1px solid #38bdf8;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        #skills {
+            background-color: #1e293b;
+            padding: 20px;
+            color: #facc15;
+            /* Yellow text */
+        }
+
+        #skills ul {
+            list-style: square;
+        }
+
+        #about {
+            background-color: #0f172a;
+            color: #e2e8f0;
+            padding: 20px;
+        }
+
+        #Hobbies {
+            background-color: #1e293b;
+            padding: 20px;
+            color: #facc15;
+            /* Yellow text */
+        }
+
+        #Hobbies ul {
+            list-style: square;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+        }
+
+        body.dark {
+            --bg-color: #0f172a;
+            --text-color: #f1f5f9;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+    </style>
     <header>
         <div style="display: flex;justify-content: space-between;align-items: center;">
             <h1>My Portfolio</h1>
@@ -48,12 +137,8 @@
                 </p>
             </div>
             <div>
-                <button onclick="showfact()">Click here to know fun fact about me!</button>
-                <p id="fact"></p>
+               
                 <script>
-                    function showfact() {
-                        document.getElementById("fact").innerText = "I once meditated through three mosquitoes bites without breaking my focus.";
-                    }
                     const toggle =
                         document.getElementById('theme-toggle');
                     const body = document.body;
@@ -95,33 +180,28 @@
         <section id="projects">
             <h2>Projects</h2>
             <div class="project-box">
-                <h3>Health Tracker (HTML + JS)</h3>
-                <p>Calculates BMI with data validation and history using localStorage.</p>
-                <a href="bmi.html" target="_blank">Live Demo</a> |
-                <a href="https://github.com/bhanu-prasad-22/bmi-tracker" target="_blank">Source Code</a>
-            </div>
+                <h3>My First Blog</h3>
+                <p>A web blog about my juorney to master Web Development.Bulit with basics of HTML and used style tag
+                    for styling</p>
+                 <a href="https://bhanu-prasad-22.github.io/My-first-Blog/" target="_blank" style="color: white; text-decoration: underline;">
+  My First Blog
+</a>
+                <h3>Bmi Tracker</h3>
+                <p>a bmi tracker calculates bmi based on height and weight</p>
+                <a href=" https://bhanu-prasad-22.github.io/Health-Tracker/"target="_blank" style="color: white; text-decoration: underline;">BMI tracker</a>
 
+            </div>
         </section>
         <section>
             <details style="margin-top: 1rem; font-size: 1.1rem;">
                 <summary><strong>🏅 Certifications / Awards</strong></summary>
                 <ul style="padding-left: 1.5rem; margin-top: 0.5rem;">
                     <li><a href="Cisco python certificate .pdf">Python</a></li>
-                    <li><a href="VUGGAM BHANU PRASAD -RDBMS PostgreSQL Test">RDBMS PostgreSQL</a></li>
+                    <li><a href="RDBMS Postgre Sql.pdf">RDBMS PostgreSQL</a></li>
                     <li><a href="Database Programming withSQL oracle.pdf">DataBase Programming withSQL</a></li>
                 </ul>
             </details>
         </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-
 
         <footer id="Contact">
             <p>Conect with me:</p>
